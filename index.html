@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body { font-family: Arial; max-width: 600px; margin: 50px auto; padding: 20px; }
+        .download-btn { 
+            background: #28a745; color: white; padding: 15px 30px; 
+            text-decoration: none; border-radius: 5px; display: inline-block;
+            margin: 10px 0; font-size: 18px;
+        }
+        .info { background: #f8f9fa; padding: 15px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h1>🎯 ZHANGYU</h1>
+    <p>为人们提供更便捷的操作</p>
+    
+    <div class="info">
+        <h3>版本 1.0.0 更新内容：</h3>
+        <ul>
+            <li>新增核心功能</li>
+            <li>修复已知问题</li>
+        </ul>
+    </div>
+
+    <a href="https://github.com/linlinlin-baba/supreme-octo-journey/blob/main/website/downloads/latest/ZHANGYU.msi" 
+       class="download-btn" onclick="trackDownload()">
+        📥 下载安装包 (v1.0.0)
+    </a>
+    
+    <p><small>文件大小: 104 KB | 系统要求: Windows 10/11</small></p>
+    
+    <h3>安装说明：</h3>
+    <ol>
+        <li>点击下载按钮</li>
+        <li>运行下载的 .msi 文件</li>
+        <li>按照向导完成安装</li>
+    </ol>
+
+    <script>
+        function trackDownload() {
+            // 简单的 Google Analytics（可选）
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'download', {
+                    'event_category': 'msi',
+                    'event_label': 'v1.0.0'
+                });
+            }
+        }
+    </script>
+</body>
+</html>
